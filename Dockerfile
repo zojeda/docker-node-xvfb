@@ -1,4 +1,4 @@
-FROM nodesource/trusty:latest
+FROM node:6
 RUN echo "unsafe-perm=true" >> .npmrc
 RUN npm config set python `which python`
 RUN apt-get update
